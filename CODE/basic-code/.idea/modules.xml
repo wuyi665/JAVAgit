@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/API/API.iml" filepath="$PROJECT_DIR$/API/API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/File/ExceptionAndFile.iml" filepath="$PROJECT_DIR$/File/ExceptionAndFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Http/Http.iml" filepath="$PROJECT_DIR$/Http/Http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IO/IO.iml" filepath="$PROJECT_DIR$/IO/IO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JUC/JUC.iml" filepath="$PROJECT_DIR$/JUC/JUC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/List/List.iml" filepath="$PROJECT_DIR$/List/List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/List/ListandStream/ListandStream.iml" filepath="$PROJECT_DIR$/List/ListandStream/ListandStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Normal lambda/Normal lambda.iml" filepath="$PROJECT_DIR$/Normal lambda/Normal lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP_update/OOP_update.iml" filepath="$PROJECT_DIR$/OOP_update/OOP_update.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Reflect/Reflect.iml" filepath="$PROJECT_DIR$/Reflect/Reflect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day2-code/day2-code.iml" filepath="$PROJECT_DIR$/day2-code/day2-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
+    </modules>
+  </component>
+</project>
