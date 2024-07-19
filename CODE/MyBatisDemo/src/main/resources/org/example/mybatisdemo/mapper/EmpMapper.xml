@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mybatisdemo.mapper.EmpMapper">
+
+    <sql id="commonselect">
+        select username,
+               name,
+               gender,
+               image,
+               job,
+               entrydate,
+               dept_id,
+               create_time,
+               update_time
+        from emp
+    </sql>
+
+    <update id="update">
+        update emp
+        <set>
+            <if test="username != null">username=#{username},</if>
+            <if test="name != null">name=#{name},</if>
+            <if test="gender != null">gender=#{gender},</if>
+            <if test="image != null">image=#{image},</if>
+            <if test="job != null">job=#{job},</if>
+            <if test="entrydate != null">entrydate=#{entrydate},</if>
+            <if test="deptId != null">dept_id=#{deptId},</if>
+            <if test="updateTime != null">update_time=#{updateTime}</if>
+            where id = #{id}
+        </set>
+    </update>
+
+    <delete id="delete">
+        delete
+        from emp
+        where id in
+        <foreach collection="ids" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="findById" resultType="org.example.mybatisdemo.pojo.Emp">
+        <include refid="commonselect"/>
+        <where>
+            <if test="id !=null">
+                id = #{id}
+            </if>
+            <if test="name !=null">
+                and name like concat('%',#{name},"%")
+            </if>
+            <if test="gender !=null">
+                and gender = #{gender}
+            </if>
+        </where>
+    </select>
+</mapper>
