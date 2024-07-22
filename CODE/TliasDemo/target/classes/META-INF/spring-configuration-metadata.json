@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "aliyun.oss",
+      "type": "com.wjm.tliasdemo.utils.AliOSSUtilsProperties",
+      "sourceType": "com.wjm.tliasdemo.utils.AliOSSUtilsProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "aliyun.oss.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.wjm.tliasdemo.utils.AliOSSUtilsProperties"
+    },
+    {
+      "name": "aliyun.oss.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.wjm.tliasdemo.utils.AliOSSUtilsProperties"
+    }
+  ],
+  "hints": []
+}
